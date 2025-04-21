@@ -1,0 +1,22 @@
+﻿<Window x:Class="ML_DPZM3P_WPF.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ML_DPZM3P_WPF"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF882A9E" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Image x:Name="img_hatter" HorizontalAlignment="Center" Height="151" VerticalAlignment="Top" Width="260" Source="/hatter.png" Stretch="Fill" Margin="0,48,0,0"/>
+        <Button x:Name="btn_start" Content="Start" HorizontalAlignment="Left" Margin="154,251,0,0" VerticalAlignment="Top" Click="btn_start_Click" Width="108" Height="57" Background="#FF0020FF" FontSize="20" BorderBrush="White" FontFamily="Times New Roman"/>
+        <Button x:Name="btn_info" Content="Információ" HorizontalAlignment="Left" Margin="533,251,0,0" VerticalAlignment="Top" Width="108" Height="57" Click="btn_info_Click" Background="#FF0020FF" BorderBrush="White" FontSize="20" FontFamily="Times New Roman"/>
+
+    </Grid>
+</Window>

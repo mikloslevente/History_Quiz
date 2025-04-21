@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp1aaa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1aaa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF882A9E" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image x:Name="img_hatter" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="260" Source="/hatter.png" Stretch="Fill" Margin="517,19,0,0"/>
+        <Label x:Name="a_lehetoseg" Content="" HorizontalAlignment="Left" Margin="75,133,0,0" VerticalAlignment="Top" Height="42" Width="218" BorderBrush="White" Foreground="White" BorderThickness="1,1,1,1" Background="Red" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="b_lehetoseg" Content="" HorizontalAlignment="Left" Margin="75,217,0,0" VerticalAlignment="Top" Height="42" Width="218" BorderBrush="White" Foreground="White" BorderThickness="1,1,1,1" Background="Red" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="c_lehetoseg" Content="" HorizontalAlignment="Left" Margin="75,305,0,0" VerticalAlignment="Top" Height="42" Width="218" BorderBrush="White" Foreground="White" BorderThickness="1,1,1,1" Background="Red" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="tb_valasz" HorizontalAlignment="Center" Margin="0,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="42" BorderBrush="White" Background="#FF52FF2D" FontFamily="Times New Roman" FontSize="20" Foreground="Black" FontWeight="Bold"/>
+        <Button x:Name="btn_koviKerdes" Content="Következő kérdés" HorizontalAlignment="Center" Margin="0,305,0,0" VerticalAlignment="Top" Height="42" Width="170" Click="btn_koviKerdes_Click" Background="#FF0020FF" BorderBrush="#FFF9F1F1" FontFamily="Times New Roman" FontSize="20"/>
+        <Button x:Name="btn_eredmeny" Content="Eredmény" HorizontalAlignment="Left" Margin="75,19,0,0" VerticalAlignment="Top" Height="31" Width="88" Click="btn_eredmeny_Click" Background="#FF0020FF" BorderBrush="White" FontSize="20" FontFamily="Times New Roman"/>
+        <Label x:Name="lb_kerdes" Content="" HorizontalAlignment="Left" Margin="75,69,0,0" VerticalAlignment="Top" Height="41" Width="410" BorderThickness="1,1,1,1" BorderBrush="White" Foreground="#FFFCFCFC" FontFamily="Times New Roman" FontWeight="Bold" Background="Red"/>
+        <Button x:Name="btn_valaszMentese" Content="Válasz bevitele" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="42" Width="170" Click="btn_valaszMentese_Click" Background="#FF0020FF" BorderBrush="#FFF4F3F3" FontFamily="Times New Roman" FontSize="20"/>
+        <Button x:Name="btn_kilepes" Content="Kilépés" HorizontalAlignment="Left" Margin="272,19,0,0" VerticalAlignment="Top" Click="btn_kilepes_Click" Height="31" Width="85" RenderTransformOrigin="0.2,1.086" Background="#FF0020FF" BorderBrush="White" FontSize="20" FontFamily="Times New Roman"/>
+        <Button x:Name="btn_info" Content="Információ" HorizontalAlignment="Left" Margin="168,19,0,0" VerticalAlignment="Top" Width="99" Height="31" Click="btn_info_Click" Background="#FF0020FF" BorderBrush="White" FontSize="20" FontFamily="Times New Roman"/>
+        <Label x:Name="lb_kerdesMutato" Content="" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Height="31" Width="60" FontFamily="Times New Roman" Foreground="White" FontSize="20"/>
+        <Label x:Name="lbl_keszito" Content="Készítette: Miklós Levente (D9ZM3P)" HorizontalAlignment="Left" Margin="572,380,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Button x:Name="btn_Ujra" Content="Újraindítás" HorizontalAlignment="Left" Margin="362,19,0,0" VerticalAlignment="Top" Background="#FF0020FF" BorderBrush="White" FontFamily="Times New Roman" FontSize="20" Width="99" Height="31" Click="btn_Ujra_Click"/>
+
+    </Grid>
+
+</Window>
